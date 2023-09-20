@@ -20,10 +20,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use("/uploads", express.static("uploads"));
 
-mongoose.connect(process.env.NEXT_MONGOOSE_CONNECTION || "mongodb+srv://66houdini:O5MgVxQf2zV5ig6L@cluster0.fyqpk75.mongodb.net/?retryWrites=true&w=majority", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect(process.env.NEXT_MONGOOSE_CONNECTION);
 
 app.get("/register", (req, res) => {
   res.json({ name: "tunji" });
