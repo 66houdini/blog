@@ -4,6 +4,7 @@
 
 * {
   box-sizing: border-box;
+
 }
 
 a {
@@ -129,7 +130,7 @@ div.post-page div.image {
 }
 
 div.post-page div.image img{
-  object-fit: cover;
+  object-fit: contain;
   object-position: center center;
   width: 100%;
 }
